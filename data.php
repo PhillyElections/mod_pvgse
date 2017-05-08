@@ -4,6 +4,8 @@ ini_set('display_errors', true);
 require_once 'local_utils.php';
 require_once '/home/phillyvotes/public_html/configuration.php';
 
+$config = new JConfig;
+
 // prevent direct access
 $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) and
 strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
@@ -33,7 +35,7 @@ if (preg_match("/[^\040\pL\pN_-]/u", $term)) {
 // *****************************************************************************
  
 // database connection
-$conn = new mysqli(JConfig::host, JConfig::user, JConfig::password, JConfig::db);
+$conn = new mysqli($config->host, $config->user, $config->password, $config->db);
  
 if ($conn->connect_error) {
     echo 'Database connection failed...' . 'Error: ' . $conn->connect_errno . ' ' . $conn->connect_error;
