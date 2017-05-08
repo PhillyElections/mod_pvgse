@@ -85,7 +85,7 @@ call_user_func_array(array($stmt, 'bind_param'), $a_parts);
 /* Execute statement */
 $stmt->execute();
  
-$stmt->bind_result($url, $post_title);
+$stmt->bind_result($alias, $name, $link);
  
 while ($stmt->fetch()) {
     $a_json_row["id"] = $alias;
