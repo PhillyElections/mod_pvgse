@@ -8,8 +8,8 @@ require_once '/home/phillyvotes/public_html/configuration.php';
 $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) and
 strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
 if (!$isAjax) {
-    $user_error = 'Access denied - not an AJAX request...';
-    trigger_error($user_error, E_USER_ERROR);
+//    $user_error = 'Access denied - not an AJAX request...';
+//    trigger_error($user_error, E_USER_ERROR);
 }
  
 // get what user typed in autocomplete input
