@@ -33,7 +33,7 @@ if (preg_match("/[^\040\pL\pN_-]/u", $term)) {
 // *****************************************************************************
  
 // database connection
-$conn = new mysqli(JConfig::$host, JConfig::$user, JConfig::$password, JConfig::$db);
+$conn = new mysqli(JConfig::host, JConfig::user, JConfig::password, JConfig::db);
  
 if ($conn->connect_error) {
     echo 'Database connection failed...' . 'Error: ' . $conn->connect_errno . ' ' . $conn->connect_error;
