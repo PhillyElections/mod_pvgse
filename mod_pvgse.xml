@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="module" version="1.5.0">
-    <name>PVGSE</name>
+    <name>Site Search</name>
     <creationDate>2017-05-08</creationDate>
     <author>Matthew Murphy</author>
     <authorEmail>matthew.e.murphy@phila.gov</authorEmail>
@@ -8,7 +8,7 @@
     <copyright>(C) 2017 City of Philadelphia</copyright>
     <license>GPL</license>
     <version>0.01</version>
-    <description>PV GSE</description> 
+    <description>Google CSE quickie</description> 
     <!-- Listing of all files that should be installed for the module to function -->
     <files>
         <!-- The "module" attribute signifies that this is the main controller file -->
