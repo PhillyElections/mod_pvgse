@@ -2,18 +2,19 @@
 //no direct access
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
+$db = &JFactory::getDatabase();
 $document = &JFactory::getDocument();
-$document->addCustomTag("
-<script>
-  (function() {
-    var cx = '016071154641257902610:5dgpa5ppyfq';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>");
+
+$document->addScript('https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+$document->addStylesheet('https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+
+$document->addScript('https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+$document->addStylesheet(JURI::root() . 'modules/mod_pvgse/style.css');
+ 
+$document->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js');
+ 
+$document->addScript(JURI::root() . 'modules/mod_pvgse/autocomplete.html.js');
+$document->addScript(JURI::root() . 'modules/mod_pvgse/autocomplete.js');
+ 
 ?>
 <gcse:search></gcse:search>
