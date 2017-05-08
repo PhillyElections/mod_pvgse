@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', true);
 // contains utility functions mb_stripos_all() and apply_highlight()
 require_once 'local_utils.php';
 require_once '/home/phillyvotes/public_html/configuration.php';
